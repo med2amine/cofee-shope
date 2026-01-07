@@ -3,96 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyCoffee</title>
+    <meta name="description" content="MyCoffee - Fresh coffee and pastries" >
+    <title>MyCoffee - Fresh Brewed Coffee & Pastries</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="first-div">
-            <div class="header">
-                <img src="" id="logo">
-                <div class="right">
-                    <h4>About us</h4>
-                    <h4>Our Menu</h4>
-                    <h4>Location</h4>
-                    <button>Order Now</button>
+    <header class="header">
+        <div class="container">
+            <img src="images/logo.png" alt="MyCoffee Logo" class="logo">
+            <nav class="nav">
+                <a href="#about">About Us</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#location">Location</a>
+                <button class="btn-primary">Order Now</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Start Your Day Right with Perfect Coffee</h1>
+                    <p>Freshly roasted beans, handcrafted drinks, and a cozy atmosphere that feels like home.</p>
+                    <button class="btn-primary">Explore Menu</button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-coffee.jpg" alt="Fresh coffee being poured">
                 </div>
             </div>
-            <div class="main">
-                <div class="left-side">
-                    <h1>something</h1>
-                    <p>so many things here</p>
+            <div class="review-badge">
+                <div class="stars">
+                    <img src="images/stars.svg" alt="5 star rating">
                 </div>
-                <div class="right-side">
-                    <div class="review">
-                        <img src="" id="stars">
-                        <p>some nice words</p>
-                    </div>
+                <p>"Best coffee in Marrakech! The atmosphere is amazing."</p>
+                <span class="reviewer">- Sarah M.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <img src="images/coffee-beans.jpg" alt="Fresh coffee beans" class="about-image">
+            <div class="about-content">
+                <h2>About MyCoffee</h2>
+                <p>Since 2020, we've been serving Marrakech's finest coffee. Every cup is crafted with care using ethically sourced beans and traditional brewing methods. Our cozy café is your perfect escape for work, meetings, or catching up with friends.</p>
+                <p>We believe great coffee brings people together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p class="section-subtitle">Crafted with passion, served with love</p>
+            
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-card">
+                    <img src="images/espresso.jpg" alt="Espresso" class="menu-image">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold, perfect wake-up call</p>
+                    <span class="price">15 DH</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/cappuccino.jpg" alt="Cappuccino" class="menu-image">
+                    <h3>Cappuccino</h3>
+                    <p>Smooth espresso with velvety milk foam</p>
+                    <span class="price">20 DH</span>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/latte.jpg" alt="Latte" class="menu-image">
+                    <h3>Café Latte</h3>
+                    <p>Creamy and smooth, our signature drink</p>
+                    <span class="price">22 DH</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/mocha.jpg" alt="Mocha" class="menu-image">
+                    <h3>Mocha</h3>
+                    <p>Coffee meets chocolate perfection</p>
+                    <span class="price">25 DH</span>
+                </div>
+
+                <!-- Food Items -->
+                <div class="menu-card">
+                    <img src="images/croissant.jpg" alt="Croissant" class="menu-image">
+                    <h3>Butter Croissant</h3>
+                    <p>Flaky, buttery, freshly baked daily</p>
+                    <span class="price">12 DH</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/avocado-toast.jpg" alt="Avocado Toast" class="menu-image">
+                    <h3>Avocado Toast</h3>
+                    <p>Fresh avocado on artisan bread</p>
+                    <span class="price">35 DH</span>
+                </div>
+
+                <div class="menu-card">
+                    <img src="images/cake.jpg" alt="Chocolate Cake" class="menu-image">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich, moist, absolutely decadent</p>
+                    <span class="price">28 DH</span>
+                </div>
+                <div class="menu-card">
+                    <img src="images/muffin.jpg" alt="Blueberry Muffin" class="menu-image">
+                    <h3>Blueberry Muffin</h3>
+                    <p>Packed with fresh blueberries</p>
+                    <span class="price">18 DH</span>
+                </div>
+            </div>
+
+            <button class="btn-secondary">View Full Menu (PDF)</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose MyCoffee?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="images/icon-beans.svg" alt="" class="feature-icon">
+                    <h3>Premium Beans</h3>
+                    <p>Ethically sourced from the best farms</p>
+                </div>
+                <div class="feature">
+                    <img src="images/icon-wifi.svg" alt="" class="feature-icon">
+                    <h3>Free WiFi</h3>
+                    <p>Fast connection for work or study</p>
+                </div>
+                <div class="feature">
+                    <img src="images/icon-cozy.svg" alt="" class="feature-icon">
+                    <h3>Cozy Atmosphere</h3>
+                    <p>Perfect spot to relax or meet friends</p>
+                </div>
+                <div class="feature">
+                    <img src="images/icon-fast.svg" alt="" class="feature-icon">
+                    <h3>Quick Service</h3>
+                    <p>Your coffee ready in minutes</p>
                 </div>
             </div>
         </div>
-        <div class="about">
-            <img src="" id="maybe-a-coffee">
-            <h2>About Us</h2>
-            <p>some words here describing the coffee shop</p>
-        </div>
-        <div class="Menu">
-            <div class="card">
-                <img src="" id="item">
-                <p>description</p>
+    </section>
+
+    <section id="location" class="location-contact">
+        <div class="container">
+            <div class="location">
+                <h3>Visit Us</h3>
+                <address>
+                    123 Rue Mohamed V<br>
+                    Gueliz, Marrakech<br>
+                    Morocco
+                </address>
+                <div class="hours">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Saturday: 7:00 AM - 10:00 PM</p>
+                    <p>Sunday: 8:00 AM - 8:00 PM</p>
+                </div>
             </div>
-            <div class="card">
-                <img src="" id="item">
-                <p>description</p>
-            </div>
-            <div class="card">
-                <img src="" id="item">
-                <p>description</p>
-            </div>
-        </div>
-        <div class="Loc-contact">
-            <div class="div1">
-                <h4>Our location</h4>
-                <address></address>
-            </div>
-            <div class="div2">
-                <h4>Contact us</h4>
-                <div class="icons">
-                    <div class="icon">
-                        <img src="" id="icon">
-                        <p>text</p>
+            <div class="contact">
+                <h3>Get In Touch</h3>
+                
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <img src="images/icon-phone.svg" alt="" class="contact-icon">
+                        <p>+212 5XX-XXXXXX</p>
                     </div>
-                    <div class="icon">
-                        <img src="" id="icon">
-                        <p>text</p>
-                    </div>
-                    <div class="social-media">
-                        <img src="" id="icon">
-                        <img src="" id="icon">
-                        <img src="" id="icon">
-                        <img src="" id="icon">
+                    <div class="contact-item">
+                        <img src="images/icon-email.svg" alt="" class="contact-icon">
+                        <p>hello@mycoffee.ma</p>
                     </div>
                 </div>
-                <div class="form">
-                    <form action="">
-                        <h4>Subscribe to our newsletter</h4>
-                        <input type="email" placeholder="E-mail">
-                        <button>Subscribe</button>    
+                <div class="social-media">
+                    <a href="#" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                    <a href="#" aria-label="TikTok"><img src="images/icon-tiktok.svg" alt="TikTok"></a>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Get our latest offers and news</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required aria-label="Email address">
+                        <button type="submit" class="btn-primary">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="D1">
-                <p>Copyright something</p>
-                <p>name</p>
-            </div>
-            <div class="D2">
-                <p>terms of use</p>
-                <span class="v-line"></span>
-                <p>Privacy Policy</p>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 MyCoffee. All rights reserved.</p>
+                    <p>Crafted with ❤️ in Marrakech</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#">Terms of Use</a>
+                    <span class="divider">|</span>
+                    <a href="#">Privacy Policy</a>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
+    
 </body>
 </html>

@@ -1,0 +1,129 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-color: brown;
+}
+
+.hero{
+    background-color: lightcoral;
+}
+
+.about{
+    background-color: antiquewhite;
+}
+
+.menu{
+    background-color: gray;
+}
+
+.features{
+    background-color: beige;
+}
+
+.location-contact{
+    background-color: aquamarine;
+}
+
+.footer{
+    background-color: saddlebrown;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+}
+
+.nav{
+    display: flex;
+    gap: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border-radius: 5px;
+    height: 25px;   
+    border: none;
+    color: white;
+    background-color: rgb(225, 117, 117);
+    cursor: pointer;
+}
+
+
+.hero .container{
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    width: 60%;
+}
+
+.hero-text h1{
+    font-size: 40px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.review-badge{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    max-height: 150px;
+    gap: 10px;
+}
+
+.review-badge .stars img{
+    width: 100px;
+}
+
+.review-badge p{
+    font-style: italic;
+    color: #555;
+    line-height: 1.5;
+}
+
+.review-badge .reviewer{
+    color: #888;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.about .container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 10px;
+}
+
+.about .container h2{
+    font-size: 25px;
+}
+
+.about .container p{
+    font-size: 17px;
+    font-family: 'Lucida Grande' , sans-serif;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
